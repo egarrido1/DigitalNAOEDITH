@@ -1,0 +1,102 @@
+/* Archivo estilos_responsivos.css */
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4vw; /* Define tamaño de letra en pantallas pequeñas */
+    }
+
+    .header-text h1 {
+        font-size: 4vw; /* Tamaño de fuente aún más grande en pantallas pequeñas */
+    }
+    
+
+    .header-text p {
+        font-size: 3vw; /* Tamaño de fuente aún más grande en pantallas pequeñas */
+    }
+    .logo {
+        font-size: 3vw; /* Reducir el tamaño del logo para pantallas medianas */
+    }
+
+    .logo-container {
+       margin-left: 2%; /* Ajustar el margen izquierdo del contenedor del logo */
+        width: 60%; /* Ajustar el ancho del contenedor del logo */
+    }
+
+    #about, #features {
+        text-align: center; /* Centrar texto en dispositivos móviles */
+    }
+
+    #features ul {
+        padding-left: 0; /* Alinear la lista de características al centro */
+    }
+
+    .feature-column {
+        width: 100%; /* Ancho completo para columnas en dispositivos móviles */
+    }
+
+    .footer {
+        text-align: center; /* Centrar texto del footer en dispositivos móviles */
+    }
+    .section {
+        margin-bottom: 20px; /* Ajustar el espacio entre secciones en dispositivos pequeños */
+    }
+
+    .image-container {
+        text-align: center; /* Centrar la imagen en dispositivos pequeños */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Asegurar que la imagen se ajuste correctamente en dispositivos pequeños */
+        height: auto; /* Permitir que la altura de la imagen se ajuste automáticamente */
+    }
+
+    #carousel iframe {
+        width: 100%; /* Ajustar el ancho del iframe en dispositivos pequeños */
+    }
+    #about p {
+        text-align: left; /* Alinear el párrafo a la izquierda en dispositivos pequeños */
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .feature-columns {
+        flex-direction: column; /* Apilar las columnas en dispositivos móviles */
+    }
+    .feature-column {
+        flex: 1 0 100%; /* Ancho completo para columnas en dispositivos móviles */
+        margin-top: 20px; /* Reducir margen superior en dispositivos móviles */
+    }
+    .footer {
+        text-align: center; /* Centrar texto del footer en dispositivos móviles */
+    }
+    .form-container {
+        padding: 10px; /* Reducir el padding en dispositivos móviles */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        margin-bottom: 5px; /* Reducir el espacio entre los elementos en dispositivos móviles */
+    }
+
+    .logo {
+        font-size: 24px; /* Tamaño de fuente fijo para el logo en pantallas pequeñas */
+    }
+
+    .logo-container {
+        margin-left: 0; /* Eliminar el margen izquierdo del contenedor del logo para pantallas pequeñas */
+        width: 100%; /* Ancho completo del contenedor del logo para pantallas pequeñas */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-text {
+        font-size: 32px; /* Aumentar el tamaño de fuente del texto del encabezado para pantallas grandes */
+    }
+
+    .feature-columns {
+        padding: 40px; /* Aumentar el espacio alrededor de las columnas de características para pantallas grandes */
+    }
+}

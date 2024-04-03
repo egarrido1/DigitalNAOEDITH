@@ -1,63 +1,174 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Teresa Edith Garrido Rodríguez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page de Caroline</title>
+    <title>Landing Page de Caroline Sada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos_responsivos.css">
 </head>
+
 <body>
-    
-    <header class="container text-center">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h1 class="mb-3">¡Aprende a Organizar tus Finanzas con Caroline!</h1>
-                <p>Únete a nuestro curso en línea y domina el arte de la gestión financiera.</p>
+    <!-- Contenedor de Encabezado -->
+    <div class="header-container">
+        <!-- Imagen en el encabezado -->
+       
+            <img class="header-image" src="./imagenes/imagen_header.svg" alt="Caroline Sada, Instructora financiera">
+       
+        <!-- Texto sobre la imagen -->
+        <div class="header-text">
+            <div class="logo-container">
+                <!-- Dentro de la etiqueta <div class="logo-container"> -->
+                <h1 class="logo" style="color: black;">Caroline Sada</h1>
+             </div>
+        
+            <h1>¡Aprende a Organizar tus Finanzas con <span class="caroline-text">Caroline!</span></h1>
+
+            <p>Únete a nuestro curso en línea y domina el arte de la gestión financiera.</p>
+        </div>
+    </div>
+
+    <!-- Contenedor que explica sobre el curso y características -->
+    <h3>Curso de finanzas para emprendedores</h3><br>
+    <div class="container">
+        <!-- Primera fila -->
+        <div class="row" id="seccion-fondo">
+            <div class="col-lg-6">
+                <section id="about">
+                    <h4 class="text-center">Sobre el Curso</h4>
+                    <p>Este curso en línea está diseñado para ayudarte a dominar conceptos clave de finanzas y a organizar tus recursos de manera eficaz. Además está diseñado para brindarte la flexibilidad del autoestudio, sin horarios fijos.</p>
+                </section>
             </div>
-            <div class="col-md-6 text-md-right">
-                <img src="./imagen3.svg" alt="Imagen financiera" class="logo img-fluid">
+            <div class="col-lg-6">
+                <section id="features">
+                    <h4 class="text-center">Características del Curso</h4>
+                    <ul class="no-bullets text-left"> <!-- Aplicamos la clase text-left aquí también -->
+                        <li>Lecciones prácticas y fáciles de entender.</li>
+                        <li>Acceso las 24/7 para que puedas aprender a tu propio ritmo.</li>
+                        <li>Material actualizado y relevante para emprendedores.</li>
+                        <li>Soporte técnico y asistencia personalizada.</li><br>
+                    </ul>
+                </section>
             </div>
         </div>
-    </header>
-
-    <main class="py-5">
-        <div class="container">
-            <section id="about">
-                <h2>Sobre el Curso</h2>
-                <p>Este curso en línea está diseñado para ayudarte a dominar conceptos clave de finanzas y a organizar tus recursos de manera eficaz.</p>
-            </section>
-            
-            <section id="features">
-                <h2>Características del Curso</h2>
-                <ul>
-                    <li>Lecciones prácticas y fáciles de entender.</li>
-                    <li>Acceso las 24/7 para que puedas aprender a tu propio ritmo.</li>
-                    <li>Material actualizado y relevante para emprendedores.</li>
-                    <li>Soporte técnico y asistencia personalizada.</li>
-                </ul>
-            </section>
-            
-            <section id="signup">
-                <h2>Regístrate Ahora</h2>
-                <p>No te pierdas esta oportunidad de mejorar tus habilidades financieras. ¡Regístrate ahora mismo!</p>
-                <a href="./formulario/registro.html" class="btn" style="background-color: #55a2b1; color: #fff;">Regístrate ahora</a>
-
-            </section>
+        <h3><br>Aprende a implementar estrategias efectivas de crecimiento!</h3><br>
+        <!-- Segunda fila, Contenedor de imagenes.svg -->
+        <div class="row">
+            <div class="col-lg-6 section">
+                <section id="image">
+                    <div class="image-container">
+                        <!-- Iserta imagen en formato SVG-->
+                        <img src="./imagenes/imagen_body.svg" alt="Curso de finanzas para emprendedores de Caroline Sada">
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section id="carousel">
+                    <div class="image-container">
+                        <!-- Inserta carrusel de imagenes SVG en codigo HTML-->
+                        <iframe src="carrusel.html" width="100%" height="200px" frameborder="0"></iframe><br>
+                    </div>
+                </section>
+            </div>
         </div>
-    </main>
-    <footer style="background-color: #a8d0e6; color: #333; text-align: center; padding: 10px 0;">
-        <p>© 2024 Caroline Sada. Todos los derechos reservados.</p>
-    </footer>
+    </div>
     
+    <!-- Formulario para inscribirese al curso-->
+    <h3 class="titulo-h6">Inscríbete ya! y recibe un 20% de descuento!!!!</h3>
+    <div class="feature-column">
+        <section id="signup">
+            <div class="form-container">
+                <h5>Completa el Formulario</h5>
+                <form id="registro-form" action="thankyou.html" method="post">
+                    <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                    <div id="nombre-error" class="error-message"></div>
+                    <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+                    <div id="apellido-error" class="error-message"></div>
+                    <input type="tel" id="telefono" class="form-control" placeholder="Teléfono" required>
+                    <div id="telefono-error" class="error-message"></div>
+                    <div style="margin-bottom: 10px;"></div> 
+                    <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                    <div id="email-error" class="invalid-feedback"></div>
+                    <button type="submit" class="my-custom-button">Accede al curso</button>
+                </form>
+            </div>
+        </section>
+     </div>
     
-    <!-- Archivo JavaScript -->
+   <!-- Footer -->
+   <!-- Contiene los testimonios y los derechos reservados -->
+   <div class="footer">
+    <!-- Contenedor del footer -->
+    <div class="container">
+        <!-- Fila principal -->
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-lg-4">
+                <!-- Contenedor de testimonios -->
+                <div class="testimonials">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial">
+                        <!-- Icono de estrella -->
+                        <i class="fas fa-star"></i>
+                        <!-- Contenido del testimonio 1 -->
+                        <p>"Me encantó el curso de finanzas para emprendedores. Aprendí mucho y ahora me siento más seguro manejando mis finanzas."</p>
+                        <p>- Juan Pérez</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-lg-4">
+                <!-- Contenedor de testimonios -->
+                <div class="testimonials">
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial">
+                        <!-- Icono de estrella -->
+                        <i class="fas fa-star"></i>
+                        <!-- Contenido del testimonio 2 -->
+                        <p>"Caroline Sada es una experta en finanzas. Su curso me ayudó a entender conceptos complejos de una manera simple y práctica."</p>
+                        <p>- María Gutiérrez</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-lg-4">
+                <!-- Contenedor de testimonios -->
+                <div class="testimonials">
+                    <!-- Testimonio 3 -->
+                    <div class="testimonial">
+                        <!-- Icono de estrella -->
+                        <i class="fas fa-star"></i>
+                        <!-- Contenido del testimonio 3 -->
+                        <p>"¡Excelente curso! Me proporcionó las herramientas necesarias para mejorar mi situación financiera. ¡Altamente recomendado!"</p>
+                        <p>- Roberto González</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fila de derechos de autor -->
+        <div class="row">
+            <!-- Columna que ocupa toda la anchura -->
+            <div class="col-lg-12">
+                <!-- Texto de derechos de autor -->
+                <p class="derechos">Derechos de autor © 2024 Caroline. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Archivo scrtipt.js que realiza la validación del formulario -->
     <script src="./js/script.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Archivo JavaScript carga la biblioteca jQuery para validación
+         del DOM-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 </html>
-

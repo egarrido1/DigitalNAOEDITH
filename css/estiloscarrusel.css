@@ -1,0 +1,38 @@
+/* archivo estiloscarrusel.css */
+/* Este archivo define los estilos para el carrusel de imagenes */
+
+.carousel {
+    width: 100%;
+    max-width: 200px; /* Reducir el tamaño máximo del contenedor */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: auto; /* Permitir que el contenedor se ajuste automáticamente en altura */
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+.insignea {
+    width: 100px; /* Ancho de la insignea */
+    height: 100px; /* Altura de la insignea */
+}
+
+.insignea svg {
+    animation: fade-in 1s ease-in-out; /* Aplica la animación de desvanecimiento */
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos para el segundo gráfico */
+.carousel-item svg {
+    width: 100%; /* Ancho del SVG */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+}
