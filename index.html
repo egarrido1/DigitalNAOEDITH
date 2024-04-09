@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,24 +19,22 @@
     <!-- Contenedor de Encabezado -->
     <div class="header-container">
         <!-- Imagen en el encabezado -->
-       
-            <img class="header-image" src="./imagenes/imagen_header.svg" alt="Caroline Sada, Instructora financiera">
-       
-        <!-- Texto sobre la imagen -->
-        <div class="header-text">
-            <div class="logo-container">
-                <!-- Dentro de la etiqueta <div class="logo-container"> -->
-                <h1 class="logo" style="color: black;">Caroline Sada</h1>
-             </div>
-        
-            <h1>¡Aprende a Organizar tus Finanzas con <span class="caroline-text">Caroline!</span></h1>
-
-            <p>Únete a nuestro curso en línea y domina el arte de la gestión financiera.</p>
+        <img class="header-image" src="./imagenes/imagen_header.svg" alt="Caroline Sada, Instructora financiera e influencer" title="Caroline sada instructora financiera e influencer">
+        <!-- Contenedor del contenido -->
+        <div class="content-container">
+            <!-- Logo -->
+            <div class="logo">
+                Caroline Sada
+            </div>
+            <!-- Texto -->
+            <div class="text-container">
+                <p>Aprende a organizar tus finanzas con Caroline</p>
+            </div>
         </div>
     </div>
 
     <!-- Contenedor que explica sobre el curso y características -->
-    <h3>Curso de finanzas para emprendedores</h3><br>
+    <h3>Curso de finanzas para emprendedores</h3>
     <div class="container">
         <!-- Primera fila -->
         <div class="row" id="seccion-fondo">
@@ -54,19 +51,59 @@
                         <li>Lecciones prácticas y fáciles de entender.</li>
                         <li>Acceso las 24/7 para que puedas aprender a tu propio ritmo.</li>
                         <li>Material actualizado y relevante para emprendedores.</li>
-                        <li>Soporte técnico y asistencia personalizada.</li><br>
+                        <li>Soporte técnico y asistencia personalizada.</li>
                     </ul>
                 </section>
             </div>
         </div>
-        <h3><br>Aprende a implementar estrategias efectivas de crecimiento!</h3><br>
-        <!-- Segunda fila, Contenedor de imagenes.svg -->
+        
+        <!-- Contenedor del logo y botón para invitar a registrarse al curso-->
+        <div class="logo-container otro-color-fondo">
+            <!-- Logo -->
+            <div class="logo">
+                Caroline Sada
+            </div>
+            <!-- Texto -->
+            <p>Unete a nuestro curso y domina el arte de la gestion financiera!</p>
+            <!-- Texto -->
+            <a href="formulario.html" class="my-custom-button">Regístrate ahora</a>
+        </div>
+
+        <!-- Segunda fila con imagen SVG y texto persuasivo para inviar a que se inscriban alcurso -->
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="./imagenes/imagen_body.svg" alt="Curso de finanzas para emprendedores de Caroline Sada">  
+            </div>
+            <div class="col-lg-6 section">
+                <section id="image">
+                    <!-- Contenedor del texto -->
+                    <div class="outstanding-container">
+                        <div class="outstanding-text">Gestiona tus finanzas</div>
+                        <p class="text-end">Amplia tus conocimientos <br> y aprende a gestionar  <br>tus finanzas de manera eficiente</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Contenedor del logo y botón para invitar a unirse al curso -->
+        <div class="logo-container otro-color-fondo">
+            <!-- Logo -->
+            <div class="logo">
+                Caroline Sada
+            </div>
+            <!-- Texto -->
+            <p>No dejes pasar la oportunidad de aumentar tu conocimiento en finanzas!</p>
+            <a href="formulario.html" class="my-custom-button">Regístrate ahora</a>
+        </div>
+
+        <!-- Tercera fila con imagenes SVG  y texto persuasivo para ivitar al curso -->
         <div class="row">
             <div class="col-lg-6 section">
                 <section id="image">
-                    <div class="image-container">
-                        <!-- Iserta imagen en formato SVG-->
-                        <img src="./imagenes/imagen_body.svg" alt="Curso de finanzas para emprendedores de Caroline Sada">
+                    <!-- Contenedor del texto -->
+                    <div class="outstanding-container">
+                        <div class="outstanding-text">Implementa Estrategias</div>
+                        <p class="text-end">Aprende a implementar <br>estrategias efectivas <br>de crecimiento</p>
                     </div>
                 </section>
             </div>
@@ -74,14 +111,14 @@
                 <section id="carousel">
                     <div class="image-container">
                         <!-- Inserta carrusel de imagenes SVG en codigo HTML-->
-                        <iframe src="carrusel.html" width="100%" height="200px" frameborder="0"></iframe><br>
+                        <iframe src="carrusel.html" width="100%" height="200px" frameborder="0" title="Carrusel de imágenes"></iframe>
                     </div>
                 </section>
             </div>
         </div>
     </div>
     
-    <!-- Formulario para inscribirese al curso-->
+    <!-- Formulario para inscribirese al curso-->  
     <h3 class="titulo-h6">Inscríbete ya! y recibe un 20% de descuento!!!!</h3>
     <div class="feature-column">
         <section id="signup">
@@ -92,32 +129,33 @@
                     <div id="nombre-error" class="error-message"></div>
                     <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
                     <div id="apellido-error" class="error-message"></div>
-                    <input type="tel" id="telefono" class="form-control" placeholder="Teléfono" required>
-                    <div id="telefono-error" class="error-message"></div>
-                    <div style="margin-bottom: 10px;"></div> 
                     <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required>
                     <div id="email-error" class="invalid-feedback"></div>
                     <button type="submit" class="my-custom-button">Accede al curso</button>
                 </form>
             </div>
         </section>
-     </div>
+    </div>
     
-   <!-- Footer -->
-   <!-- Contiene los testimonios y los derechos reservados -->
-   <div class="footer">
+    <!-- Footer -->
+    <!-- Contiene los testimonios, iconos de redes sociales y los derechos de autor -->
+    <div class="footer">
     <!-- Contenedor del footer -->
     <div class="container">
         <!-- Fila principal -->
         <div class="row">
+            <!-- Columna 12 para centrar el título -->
+            <div class="col-12 text-center">
+                <h5>Testimonios</h5>
+            </div>
             <!-- Columna 1 -->
             <div class="col-lg-4">
                 <!-- Contenedor de testimonios -->
                 <div class="testimonials">
                     <!-- Testimonio 1 -->
                     <div class="testimonial">
-                        <!-- Icono de estrella -->
-                        <i class="fas fa-star"></i>
+                        <!-- Foto del testimonio -->
+                        <img src="./imagenes/testimonio1.png" alt="Foto de Juan Pérez" style="width: 60px; height: 60px;">
                         <!-- Contenido del testimonio 1 -->
                         <p>"Me encantó el curso de finanzas para emprendedores. Aprendí mucho y ahora me siento más seguro manejando mis finanzas."</p>
                         <p>- Juan Pérez</p>
@@ -130,8 +168,8 @@
                 <div class="testimonials">
                     <!-- Testimonio 2 -->
                     <div class="testimonial">
-                        <!-- Icono de estrella -->
-                        <i class="fas fa-star"></i>
+                        <!-- Foto del testimonio -->
+                        <img src="./imagenes/testimonio2.png" alt="Foto de María Gutierrez" style="width: 60px; height: 60px;">
                         <!-- Contenido del testimonio 2 -->
                         <p>"Caroline Sada es una experta en finanzas. Su curso me ayudó a entender conceptos complejos de una manera simple y práctica."</p>
                         <p>- María Gutiérrez</p>
@@ -144,8 +182,8 @@
                 <div class="testimonials">
                     <!-- Testimonio 3 -->
                     <div class="testimonial">
-                        <!-- Icono de estrella -->
-                        <i class="fas fa-star"></i>
+                        <!-- Foto del testimonio -->
+                        <img src="./imagenes/testimonio3.png" alt="Foto de Roberto Gonzalez" style="width: 60px; height: 60px;">
                         <!-- Contenido del testimonio 3 -->
                         <p>"¡Excelente curso! Me proporcionó las herramientas necesarias para mejorar mi situación financiera. ¡Altamente recomendado!"</p>
                         <p>- Roberto González</p>
@@ -153,12 +191,35 @@
                 </div>
             </div>
         </div>
-        <!-- Fila de derechos de autor -->
+        <!-- Fila de redes sociales -->
         <div class="row">
             <!-- Columna que ocupa toda la anchura -->
             <div class="col-lg-12">
-                <!-- Texto de derechos de autor -->
-                <p class="derechos">Derechos de autor © 2024 Caroline. Todos los derechos reservados.</p>
+                <!-- Sección Iconos de redes sociales -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <p>Visítanos en:</p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Icono de Instagram monocromático -->
+                            <i class="fab fa-instagram icono-social" style="color: black;"></i>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Icono de YouTube monocromático -->
+                            <i class="fab fa-youtube icono-social" style="color: black;"></i>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Icono de LinkedIn monocromático -->
+                            <i class="fab fa-linkedin icono-social" style="color: black;"></i>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Icono de Facebook monocromático -->
+                            <i class="fab fa-facebook icono-social" style="color: black;"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="derechos">Derechos de autor © 2024 Soluciones Creativas. Todos los derechos reservados.</p>
             </div>
         </div>
     </div>
@@ -168,7 +229,7 @@
     <script src="./js/script.js"></script>
 
     <!-- Archivo JavaScript carga la biblioteca jQuery para validación
-         del DOM-->
+        del DOM-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Teresa Edith Garrido Rodríguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos_responsivos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- Contenedor de Encabezado -->
+    <div class="header-container">
+        <!-- Imagen en el encabezado -->
+        <img class="header-image" src="./imagenes/imagen_header.svg" alt="Caroline Sada, Instructora financiera">
+        <!-- Contenedor del contenido -->
+        <div class="content-container">
+            <!-- Logo -->
+            <div class="logo">
+                Caroline Sada
+            </div>
+            <!-- Texto -->
+            <div class="text-container">
+                <p>Aprende a organizar tus finanzas con Caroline</p>
+            </div>
+        </div>
+    </div>
+    <!-- Formulario para registrarse-->
+    <div class="feature-column">
+        <section id="signup">
+            <div class="form-container">
+                <h5>Completa el Formulario</h5>
+                <form id="registro-form" action="thankyou.html" method="post">
+                    <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                    <div id="nombre-error" class="error-message"></div>
+                    <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+                    <div id="apellido-error" class="error-message"></div>
+                    <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                    <div id="email-error" class="invalid-feedback"></div>
+                    <button type="submit" class="my-custom-button">Accede al curso</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p class="derechos">Derechos de autor © 2024 Soluciones Creativas. Todos los derechos reservados.</p>
+    </div>
+    
+    <!-- Archivo script.js que realiza la validación del formulario -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

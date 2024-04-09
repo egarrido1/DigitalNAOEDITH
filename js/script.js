@@ -1,3 +1,4 @@
+
 // archivo script.js
 /**
  * @fileoverview Este archivo contiene el script principal para validar un formulario.
@@ -19,17 +20,14 @@ function validateForm(event) {
     // Obtener los valores de los campos del formulario
     var nombreInput = document.getElementById('nombre').value;
     var apellidoInput = document.getElementById('apellido').value;
-    var telefonoInput = document.getElementById('telefono').value;
     var emailInput = document.getElementById('email').value;
 
     // Expresiones regulares para verificar los formatos de los campos
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    var telefonoRegex = /^\d{10}$/;
 
     // Mensajes de error
     var nombreError = document.getElementById('nombre-error');
     var apellidoError = document.getElementById('apellido-error');
-    var telefonoError = document.getElementById('telefono-error');
     var emailError = document.getElementById('email-error');
 
     // Validar nombre
@@ -46,13 +44,6 @@ function validateForm(event) {
         apellidoError.textContent = '';
     }
 
-    // Validar teléfono
-    if (!telefonoRegex.test(telefonoInput)) {
-        telefonoError.textContent = 'Por favor, introduce un número de teléfono válido.';
-    } else {
-        telefonoError.textContent = '';
-    }
-
     // Validar correo electrónico
     if (emailInput.trim() === '' || !emailRegex.test(emailInput)) {
         emailError.textContent = 'Por favor, introduce un correo electrónico válido.';
@@ -61,7 +52,7 @@ function validateForm(event) {
     }
 
     // Comprobar si todos los campos son válidos
-    if (nombreInput.trim() !== '' && apellidoInput.trim() !== '' && telefonoRegex.test(telefonoInput) && emailRegex.test(emailInput)) {
+    if (nombreInput.trim() !== '' && apellidoInput.trim() !== '' && emailRegex.test(emailInput)) {
         // Redirigir a la página de agradecimiento
         window.location.href = "thankyou.html";
     }

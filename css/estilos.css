@@ -10,11 +10,41 @@ body {
     padding: 0; /* Eliminar relleno para evitar espacios no deseados */
 }
 
-h1 {
-    color: black; /* Define el color del texto del encabezado */
-    margin-top: 25px; /* Espacio arriba del h1 */
-    text-align: left; /* Alinear el texto a la izquierda */
-    margin-bottom: 10px; /* Espacio abajo del h1 */
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden; /* Evitar que el contenido se desborde fuera del contenedor */
+    background-color: #d4e6eb; /* Fondo del contenedor */
+}
+
+.header-image {
+    width: 50%; /* Ocupa la mitad del ancho */
+    height: auto; /* Para mantener la relación de aspecto */
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold; /* Hace que el logo aparezca en negrita */
+}
+
+.text-container {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+    font-size: 1.5rem; /* Tamaño de letra más grande */
 }
 
 h3 {
@@ -39,6 +69,60 @@ h6 {
     color: #5CA1B4; /* Cambiar el color del texto del h4 a azul */
 }
 
+/* Estilos para el contenedor del logo y texto persuasivo */
+.logo-container {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Ajusta margen superior */
+}
+
+/* Estilos para el logo dentro del contenedor */
+.logo-container .logo {
+    font-family: 'Parisienne', cursive; /* Tipo de letra igual al del encabezado */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: black; /* Color del texto */
+    font-weight: bold; /* Hacer que el texto sea negrita */
+}
+
+/* Estilos para el texto dentro del contenedor */
+.logo-container p {
+    font-family: 'Montserrat', sans-serif; /* Tipo de letra */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin-top: 3px; /* Ajustar margen superior para reducir el espacio entre el logo y el texto */
+}
+
+.text-end {
+    font-size: 2rem; /* Tamaño de letra más grande */
+    color: #386E82; /* Color de texto */
+}
+
+#image {
+    background-color: #a7c8d1; /* Color de fondo del contenedor del texto */
+    padding: 20px; /* Agregar espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.outstanding-container {
+    position: relative; /* Posición relativa para posicionar el texto sobresaliente */
+    margin-top: 20px; /* Margen superior para separar del borde superior */
+}
+
+.outstanding-text {
+    position: absolute; /* Posición absoluta para superponer el texto */
+    top: -50px; /* Ajusta altura */
+    left: 5px; /* Ajusta a la izquierda */
+    background-color: #386E82; /* Color de fondo */
+    padding: 5px 10px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-family: Montserrat, Geneva, Tahoma, sans-serif; /* Define el tipo de letra */
+    font-size: 2vw; /* Tamaño de la fuente */
+    z-index: 1; /* Para que esté sobre el texto principal */
+}
+
+.col-lg-6 img {
+    margin-bottom: 20px; /* Ajusta margen inferior */
+}
+
 #features h4,
 #features ul {
     text-align: left; /* Alinea el texto al centro */
@@ -46,62 +130,6 @@ h6 {
 
 .text-center {
     text-align: center; /* Alinea los titulos de about y features al centro */
-}
-
-.logo { /* Define estilos para el logo */
-    font-size: 4vw;
-    font-weight: 100;
-    font-family: 'Parisienne', cursive;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.logo-container { /* Define estilos para el contenedor del logo */
-    margin-left: 5%; /* Utiliza un porcentaje para el margen izquierdo del contenedor del logo */
-    margin-top: 2%; /* Utiliza un porcentaje para el margen superior del contenedor del logo */
-    width: 30%; /* Utiliza un porcentaje para el ancho del contenedor del logo */
-}
-
-.header-container { /* Define estilos para el contenedor del header */
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden; /* Evitar que el contenido se desborde fuera del contenedor */
-}
-
-.header-image { /* Define estilos para la imagen del header */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
-    z-index: -1;
-}
-
-.header-text { /* Define estilos para los textos del header */
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; 
-    color: white;
-    max-width: 80%; /* Ancho máximo para el texto */
-}
-
-.header-text h1 {
-    font-size: 4vw; /* Tamaño de fuente responsivo */
-    max-width: 100%; /* Ancho máximo para el texto */
-    word-wrap: break-word; /* Rompe palabras largas para ajustarse dentro del contenedor */
-}
-
-.header-text p {
-    font-size: calc(1.5vw + 0.5vh); /* Tamaño de fuente relativo al ancho de la ventana y alto de la ventana */
-    margin-top: 2vh; /* Margen superior relativo al alto de la ventana */
-    text-align: center; /* Alinear el texto al centro */
-}
-
-.header-text h1,
-.header-text p {
-    font-size: 24px; /* Tamaño de fuente fijo para todas las pantallas */
 }
 
 .no-bullets { /* Elimina viñetas de la lista */
@@ -113,7 +141,7 @@ h6 {
     padding-left: 0;
 }
 
-#features li { /* DEfine margen de la lista */
+#features li { /* Define margen de la lista */
     margin-left: 0;
 }
 
@@ -122,8 +150,15 @@ h6 {
     padding: 20px; /* Opcional: añade relleno para que el color de fondo sea visible */
 }
 
+.otro-color-fondo {
+    background-color: #9dc0ca; /* Define color de fondo  */
+    padding: 20px; /* Opcional: añade relleno para que el color de fondo sea visible */
+    margin-top: 40px; /* Agrega un margen superior */
+    margin-bottom: 40px; /* Agrega un margen inferior */
+}
+
 .titulo-h6 { /* Define color del titulo h6 */
-    color: #5CA1B4; /* Color de fondo del título */
+    color: #386e82; /* Color de fondo del título */
 }
 
 .form-container { /* Define estilos para el contenedor del formulario */
@@ -143,10 +178,27 @@ form { /* Define estilos para el formulario */
     margin: 0 auto; /* Centrar el formulario horizontalmente */
 }
 
+/* Estilos para los campos de entrada del formulario */
+.form-control {
+    height: 40px; /* Establecer la altura deseada para los campos de entrada */
+}
+
+/* Estilos para los contenedores de mensajes de error */
+.error-message {
+    height: 20px; /* Establecer la altura deseada para los contenedores de mensajes de error */
+}
+
 input[type="text"],
 input[type="email"],
 button {
     margin-bottom: 10px; /* Agregar espacio entre los elementos */
+}
+
+/* Añade espacio mas espacio al rededor de botones y enlaces */
+button,
+a {
+    padding: 10px 20px; /* Aumenta el padding para botones y enlaces */
+    margin: 10px; /* Aumenta el margen para botones y enlaces */
 }
 
 /* Estilos para el botón personalizado de llamada a la acción */
@@ -156,7 +208,7 @@ button {
     background-color: #5CA1B4; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border: none; /* Eliminar borde del botón */
-    padding: 8px 15px; /* Espaciado interno del botón */
+    padding: 10px 15px; /* Ajusta el relleno para aumentar el tamaño verticalmente */
     border-radius: 5px; /* Borde redondeado del botón */
     cursor: pointer; /* Cursor cambia a mano al pasar sobre el botón */
     transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
@@ -166,6 +218,10 @@ button {
 /* Estilos para el botón personalizado cuando se pasa el cursor sobre él */
 .my-custom-button:hover {
     background-color: #386E82; /* Cambiar color de fondo del botón al pasar el cursor */
+}
+
+.my-custom-button {
+    text-decoration: none; /* Eliminar el subrayado del enlace */
 }
 
 .footer { /* Define estilos para el footer */
@@ -179,7 +235,7 @@ button {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.footer p.derechos {
+.footer p.derechos {/* Define estilos para los derechos de autor */
     text-align: center; /* Alinea al centro */
     font-size: 14px; /* Tamaño de fuente para el párrafo de derechos de autor */
 }
@@ -208,3 +264,5 @@ button {
     border-radius: 10px;
     text-align: center;
 }
+
+
